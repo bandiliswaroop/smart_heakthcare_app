@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <!-- Background Image -->
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:alpha="0.8"
+      android:background="@drawable/ic_hospital"/>
+
+  <!-- Form Container -->
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:elevation="8dp">
+
+      <!-- Title Section -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#124242"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+      </LinearLayout>
+
+      <!-- Form Fields -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/etName"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPersonName"
+              android:hint="Enter your name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/etEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textEmailAddress"
+              android:hint="example@gmail.com"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:passwordToggleEnabled="true">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/etPassword"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="textPassword"
+              android:hint="Enter password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Terms -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Terms  Conditions and Privacy Policy"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"/>
+      </LinearLayout>
+
+      <!-- Buttons -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Create Account"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            app:cornerRadius="8dp"
+            app:backgroundTint="#4285F4"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in"
+            android:textColor="#4285F4"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+</FrameLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8FF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Profile Info Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/profile_card_bg"
+        android:padding="16dp">
+
+        <!-- NAME -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtName" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWAROOP" />
+        </LinearLayout>
+
+        <!-- EMAIL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtEmail" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swaroop@gmail.com" />
+        </LinearLayout>
+
+        <!-- DATE OF BIRTH -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="DATE OF BIRTH"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtDob" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2004-05-21" />
+        </LinearLayout>
+
+        <!-- AGE -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtAge" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20y, 11m, 15d" />
+        </LinearLayout>
+
+        <!-- GENDER -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="GENDER"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtGender" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE" />
+        </LinearLayout>
+
+        <!-- PHONE -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="PHONE"
+                android:textStyle="bold" />
+            <TextView  android:id="@+id/txtPhone" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7392819462" />
+        </LinearLayout>
+
+        <!-- STATE -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="STATE"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtState" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ANDHRA PRADESH" />
+        </LinearLayout>
+
+        <!-- ADDRESS -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS"
+                android:textStyle="bold" />
+            <TextView android:id="@+id/txtAddress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EAST GODAVARI,\nRAJAHMUNDRY" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:drawableLeft="@drawable/ic_logout"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="0dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="EDIT PROFILE"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="8dp"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

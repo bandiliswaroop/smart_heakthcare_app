@@ -1,0 +1,269 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F3F8FF"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <!-- "Home" Title -->
+            <TextView
+                android:id="@+id/tvHomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <!-- Profile + Notification Icons -->
+            <LinearLayout
+                android:id="@+id/rightIconsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Profile Icon with circle bg -->
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_profile"
+                    android:background="@drawable/circle_background"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    android:contentDescription="Profile" />
+
+                <!-- Notification Icon with red dot -->
+
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imgNotification"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:background="@drawable/circle_background"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:src="@drawable/ic_notification"-->
+<!--                        android:contentDescription="Notifications" />-->
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!-- Current Location Display -->
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_location_box"
+            android:padding="12dp"
+            android:text="📍Fetching location..."
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+
+        <!-- 🔍 Search box with mic button on the right -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <!-- Search box -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:queryHint="Search hospitals by location..."
+                android:iconifiedByDefault="false"
+                android:background="@drawable/search_background" />
+
+            <!-- 🎤 Voice search mic icon -->
+            <ImageView
+                android:id="@+id/btnVoiceSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:contentDescription="Voice Search"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Hospital List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHospitals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/btnChatBot"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:contentDescription="Chatbot"-->
+<!--        app:backgroundTint="@color/teal_700"-->
+<!--        app:srcCompat="@drawable/ic_chatbot" />-->
+
+
+    <!-- EMERGENCY Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/emergencyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="EMERGENCY"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:layout_alignParentTop="true"
+        app:cornerRadius="100dp"
+        app:backgroundTint="#FF2B2B"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:weightSum="5"
+        android:padding="8dp"
+        android:elevation="4dp">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_home"
+                android:layout_width="45dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textColor="#3B82F6"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Doctors -->
+        <LinearLayout
+            android:id="@+id/btndoctor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_doctors"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Doctors"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Labs -->
+        <LinearLayout
+            android:id="@+id/btnLabs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_lab"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:text="Labs"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_height="20dp"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+
+        <!-- Tips -->
+        <LinearLayout
+            android:id="@+id/btnTips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_tip"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:text="Tips"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Blood -->
+        <LinearLayout
+            android:id="@+id/btnbot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:src="@drawable/ic_chatbot"
+                android:layout_width="50dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                android:text="Chat"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

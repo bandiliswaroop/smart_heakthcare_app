@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgHospitalPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:background="#DDDDDD" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:spacing="8dp">
+
+            <!-- Filled Button -->
+            <Button
+                android:id="@+id/btnBookAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:backgroundTint="#0066D9"
+                android:text="Book Appointment"
+                android:textColor="#FFFFFF" />
+
+            <!-- Add spacing here -->
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="0dp" />
+            <!-- Outlined Button -->
+            <Button
+                android:id="@+id/btnGetDirections"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingStart="26dp"
+                android:paddingEnd="28dp"
+                android:text="Get Directions"
+                android:textColor="#0066D9"
+                android:background="@drawable/rounded_outlined_button" />
+        </LinearLayout>
+
+
+
+        <!-- Hospital Name -->
+        <TextView
+            android:id="@+id/tvHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textSize="22sp"
+            android:textColor="#1A1A1A"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- About Hospital -->
+        <TextView
+            android:id="@+id/tvAboutHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:text="About Hospital"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <!-- Specialties -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ Our Specialties"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSpecialtiesPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always" />
+
+        <!-- Facilities -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏥 Facilities"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/facilityPreviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- Advanced Technology -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Advanced Technology"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTechnologiesPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always" />
+
+        <!-- Address & Contact -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Hospital Info"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="Address here"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="Contact"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ 24/7 Emergency Services"
+            android:textSize="16sp"
+            android:textColor="#007B00"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

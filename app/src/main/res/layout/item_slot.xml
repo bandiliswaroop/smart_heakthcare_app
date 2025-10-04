@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/cardSlot"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="8dp"
+card_view:cardElevation="4dp"
+card_view:cardCornerRadius="8dp">
+
+<TextView
+    android:id="@+id/textSlot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:text="9:00 AM - 10:00 AM"
+    android:textColor="#000000"
+    android:textSize="16sp"
+    android:gravity="center" />
+    <ImageView
+        android:id="@+id/iconDelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_delete" />
+</androidx.cardview.widget.CardView>

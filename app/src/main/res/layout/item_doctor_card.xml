@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:elevation="6dp"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/tvSpecialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Homeopathic"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <!-- Doctor Name -->
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOCTOR: Dr. Tapas Kumar Deb"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Block -->
+        <TextView
+            android:id="@+id/tvBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLOCK: BALLY-JAGACHA"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Gram Panchayat -->
+        <TextView
+            android:id="@+id/tvGP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GRAM PANCHAYAT: CHAKPARA ANANDANAGAR"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+
+        <!-- Book Now Button -->
+        <TextView
+            android:id="@+id/tvBookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textColor="#008577"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

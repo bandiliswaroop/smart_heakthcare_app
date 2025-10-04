@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:background="#FFFFFF"
+    android:layout_marginTop="8dp"
+    android:elevation="2dp">
+
+    <EditText
+        android:id="@+id/etSpecialty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Specialty Name"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/btnRemoveSpecialty"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_delete_red"
+        android:layout_marginStart="8dp" />
+</LinearLayout>

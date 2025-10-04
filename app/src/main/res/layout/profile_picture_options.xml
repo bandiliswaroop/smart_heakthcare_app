@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/takePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📷 Take Photo"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/chooseGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🖼️ Choose from Gallery"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/removePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="❌ Remove Photo"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="?android:selectableItemBackground"
+        android:textColor="#FF4444" />
+</LinearLayout>

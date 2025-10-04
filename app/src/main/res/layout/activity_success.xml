@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F4F8FC"
+    android:padding="24dp">
+
+    <!-- ✅ GPay-style checkmark animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/successAnim"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        app:lottie_rawRes="@raw/success_check"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false" />
+
+    <TextView
+        android:id="@+id/successText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment Booked\nSuccessfully"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/btnGoHome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:backgroundTint="#11B275"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:alpha="0"/>
+</LinearLayout>

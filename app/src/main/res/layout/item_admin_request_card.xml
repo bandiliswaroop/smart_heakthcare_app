@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvHospitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Central Hospital"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvHospitalAccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Access"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/tvDateRequested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🕒 2025-06-05"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Approve"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#007BFF"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/btnReject"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:text="Reject"
+                android:textColor="#000000"
+                android:backgroundTint="#F43D3D"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/tvViewDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="view details"
+                android:textColor="#A28BF4"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

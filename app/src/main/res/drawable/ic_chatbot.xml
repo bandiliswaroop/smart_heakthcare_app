@@ -1,0 +1,10 @@
+<!-- res/drawable/ic_chatbot.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,3C7.03,3 3,6.58 3,11c0,2.42 1.21,4.59 3.1,6.07L6,21l4.1-2.09C11.05,19.63 11.52,19.75 12,19.75c4.97,0 9-3.58 9-8.25S16.97,3 12,3zM12,17.5c-1.1,0 -2-0.9 -2-2s0.9-2 2-2 2,0.9 2,2 -0.9,2 -2,2z"/>
+</vector>

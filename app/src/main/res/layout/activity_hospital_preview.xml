@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Hospital Image -->
+<!--        <ImageView-->
+<!--            android:id="@+id/imgHospitalPreview"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:background="#DDDDDD" />-->
+        <!-- Hospital Image with Action Buttons on Top -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/imgHospitalPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#DDDDDD" />
+
+            <!-- 2x2 Grid of Buttons -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="2"
+                android:padding="16dp"
+                android:alignmentMode="alignMargins"
+                android:useDefaultMargins="true">
+
+                <!-- Box 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_box_blue"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_calendar" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="View All Appointments"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Box 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_box_green"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_hospitallogo" />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Update Hospital Info"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+
+                <!-- Box 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_box_purple"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_folder" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:text="Patient Records"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Box 4 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/rounded_box_orange"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_pending" />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:text="Pendings"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+            </GridLayout>
+        </FrameLayout>
+
+
+        <!-- Hospital Name -->
+        <TextView
+            android:id="@+id/tvHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textSize="22sp"
+            android:textColor="#1A1A1A"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <!-- About Hospital -->
+        <TextView
+            android:id="@+id/tvAboutHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:text="About Hospital"
+            android:textColor="#444"
+            android:textSize="16sp" />
+
+        <!-- Specialties -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐ Our Specialties"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSpecialtiesPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always" />
+
+        <!-- Facilities -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏥 Facilities"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:id="@+id/facilityPreviewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- Advanced Technology -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Advanced Technology"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTechnologiesPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="always" />
+
+        <!-- Address & Contact -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Hospital Info"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="Address here"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="Contact"
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvEmergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ 24/7 Emergency Services"
+            android:textSize="16sp"
+            android:textColor="#007B00"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>

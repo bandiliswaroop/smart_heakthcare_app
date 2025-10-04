@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_box"
+            android:hint="Type a message"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="4"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_send"
+        android:scaleType="fitCenter"
+        app:iconTint="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="334dp"
+            android:layout_height="310dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/ic_upload" />
+
+        <!-- Combined "Already have an account? Log in" in one line -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_login_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Already have an account?"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Log in"
+                android:textSize="16sp"
+                android:textColor="#6200EE"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Sign up with Email -->
+        <Button
+            android:id="@+id/btn_sign_up_email"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:text="sign up with email"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_ripple"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Sign up with Google -->
+        <Button
+            android:id="@+id/btn_sign_up_google"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:text="sign up with google"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_rounded_ripple"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rural Health"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tv_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Mobile Health Assistance App for\nRural Communities"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</ScrollView>

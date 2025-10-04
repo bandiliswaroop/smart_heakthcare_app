@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title Bar -->
+        <TextView
+            android:id="@+id/titleFindDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find Doctor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="#3F51B5"
+            android:padding="12dp" />
+
+        <!-- State Spinner -->
+        <Spinner
+            android:id="@+id/spinnerState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp" />
+
+        <!-- District Spinner -->
+        <Spinner
+            android:id="@+id/spinnerDistrict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp" />
+
+        <!-- Division/Block Spinner -->
+        <Spinner
+            android:id="@+id/spinnerDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerMandal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp"  />
+
+        <!-- Gram Panchayat Spinner -->
+        <Spinner
+            android:id="@+id/spinnerGP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="8dp" />
+
+        <!-- Enhanced Language Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferred Language"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/layoutLanguages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- English Language Option -->
+                <TextView
+                    android:id="@+id/langEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip_selected"
+                    android:textColor="@android:color/black"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+
+                <!-- Telugu Language Option -->
+                <TextView
+                    android:id="@+id/langTelugu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telugu"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="selected"/>
+
+                <!-- Hindi Language Option -->
+                <TextView
+                    android:id="@+id/langHindi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+
+                <!-- Tamil Language Option -->
+                <TextView
+                    android:id="@+id/langTamil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tamil"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langBengali"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bengali"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langMarathi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marathi"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langUrdu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Urdu"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langGujarati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gujarati"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langKannada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kannada"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langMalayalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Malayalam"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langOdia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Odia"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+                <TextView
+                    android:id="@+id/langPunjabi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Punjabi"
+                    android:padding="12dp"
+                    android:background="@drawable/bg_language_chip"
+                    android:textColor="#000000"
+                    android:layout_marginEnd="8dp"
+                    android:drawableStart="@drawable/ic_language"
+                    android:drawablePadding="4dp"
+                    android:textStyle="bold"
+                    android:tag="unselected"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/btnSearchDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <!-- Doctor Results List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/bg_circle"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_hospital"
+            android:elevation="3dp" />
+
+        <TextView
+            android:id="@+id/tvFullAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/bg_chip_teal"
+            android:drawableStart="@drawable/ic_locations"
+            android:drawablePadding="6dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="Full Address"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tvDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFullAddress"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="Dr. John Doe"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:id="@+id/layoutRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDoctorName"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:progressTint="#FFD700"
+                android:secondaryProgressTint="@color/teal_700" />
+
+
+            <TextView
+                android:id="@+id/tvRatingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="4.5"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvReviewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutRating"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:text="(128 Reviews)"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+
+        <TextView
+            android:id="@+id/tvHospitalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvReviewCount"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_chip_light"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="Cardiologist"
+            android:textColor="@color/teal_700"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tvClinicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHospitalType"
+            android:layout_marginTop="6dp"
+            android:text="🏥 City Heart Clinic"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvClinicAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvClinicName"
+            android:layout_marginTop="4dp"
+            android:text="123, Main Street, Chennai"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvClinicAddress"
+            android:layout_marginTop="4dp"
+            android:text="📞 9876543210 | 📹 Video"
+            android:textColor="@color/red"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tvAppointmentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvBookNow"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_chip_light"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="5 Consultations"
+            android:textSize="12sp"
+            android:textColor="@color/teal_700"
+            android:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/tvBookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvContact"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Book Now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="8dp"
+            android:drawableStart="@drawable/ic_calendar"
+            android:drawablePadding="6dp"
+            android:elevation="4dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

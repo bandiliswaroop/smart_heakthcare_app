@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F7FC"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book An Appointment"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="#000000" />
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Name"
+            android:background="@drawable/bg_input_rounded"
+            android:paddingHorizontal="16dp"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Email"
+            android:background="@drawable/bg_input_rounded"
+            android:paddingHorizontal="16dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Phone with flag icon -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_input_rounded"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Phone"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:background="@android:color/transparent"
+                android:textColorHint="#000000" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_flag_india"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp" />
+        </RelativeLayout>
+
+        <!-- Date with calendar icon -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_input_rounded"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Date"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:clickable="true"
+                android:textColorHint="#000000" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_calendar"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp" />
+        </RelativeLayout>
+
+        <!-- Message -->
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Message"
+            android:gravity="top"
+            android:background="@drawable/bg_input_rounded"
+            android:padding="16dp"
+            android:textColorHint="#000000"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_rounded_blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Personal Details"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/fullNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full name"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:textColor="#000" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/dobEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Date of Birth"
+            android:focusable="false"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Gender Selection with Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <!-- Male Option -->
+            <LinearLayout
+                android:id="@+id/maleOption"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/gender_unselected"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_male" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <!-- Female Option -->
+            <LinearLayout
+                android:id="@+id/femaleOption"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@drawable/gender_unselected"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_female" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Hospital Name -->
+        <EditText
+            android:id="@+id/hospitalNameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Hospital Name"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Specialization -->
+        <EditText
+            android:id="@+id/specializationEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Specialization"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/addressEdit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Address"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#000" />
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:textColor="#F8F6F6"
+            android:backgroundTint="#8BCBFF"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_button" />
+
+    </LinearLayout>
+</ScrollView>

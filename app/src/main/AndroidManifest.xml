@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.saveetha.smarthealthcareapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartHealthcareApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.ReviewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AiChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorAppointmentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentListFragment"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditDoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorPersonalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientPersonalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientBookingAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NearbyLabsMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorSlotAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".PatientClinicBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientDoctorSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorSlotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalRejectedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHospitalViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeadaceTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StomachPainTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BodyPainTipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BackPainTipActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityHealthyTips"
+            android:exported="false" />
+        <activity
+            android:name=".ColdTipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeverTipsActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".HospitalPreviewActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ViewHospitalDetailsActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".activity_hospital_profile" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestApprovedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".request_pending"
+            android:exported="false" />
+        <activity
+            android:name=".RequestPendingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_card"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PendingRequestsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".RejectedRequestsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovedRequestsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalsOverviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RejectHospitalAccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApprovedHospitalsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewHospitalAccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApiService"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalPersonalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HospitalSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorPersonalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationPermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationPermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientPersonalDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PatientLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoleSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyASTIxjtIgjUbt6T-v0T9M1ysNvFauc3Ms" />
+    </application>
+
+</manifest>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F9FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Profile Image with camera icon -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/circle_bg"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/cameraIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/profileImage"
+            android:layout_alignEnd="@id/profileImage"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_camera"
+            android:background="@drawable/circle_green"
+            android:padding="6dp" />
+    </RelativeLayout>
+
+    <!-- Navigation items -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewHome"
+            style="@style/ProfileNavItem"
+            android:text="🏠  Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
+            android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground" />
+
+        <TextView
+            android:id="@+id/Appointments"
+            style="@style/ProfileNavItem"
+            android:text="📅  Appointments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/ProfilePersonal"
+            style="@style/ProfileNavItem"
+            android:text="👤  Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
+
+
+        <TextView
+            style="@style/ProfileNavItem"
+            android:text="🩸  Blood Requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AAB0B6"
+            android:layout_marginVertical="16dp"/>
+
+        <TextView
+            style="@style/ProfileNavTitle"
+            android:text="Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FF0000"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/Logout"
+            style="@style/ProfileNavItem"
+            android:text="↩️  Logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

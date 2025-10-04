@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp">
+
+    <!-- Hospital Name -->
+    <TextView
+        android:id="@+id/tvHospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KIMS-Sunshine Hospitals"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- Address -->
+    <TextView
+        android:id="@+id/tvHospitalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metro Pillar No. C1327, Begumpet, Hyderabad"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp" />
+    <!-- Distance -->
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp" />
+<!--    android:text="2.3 km away"-->
+    <!-- Button Row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- View Details Button -->
+        <LinearLayout
+            android:id="@+id/btnViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_button_light"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_locations"
+                android:layout_marginEnd="6dp"
+                app:tint="#2196F3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:textColor="#2196F3"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- View Direction Button -->
+        <LinearLayout
+            android:id="@+id/btnViewDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_button_light">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_direction"
+                android:layout_marginEnd="6dp"
+                app:tint="#2196F3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Direction"
+                android:textColor="#2196F3"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

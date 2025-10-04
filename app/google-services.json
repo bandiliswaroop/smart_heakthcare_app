@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "175420615316",
+    "project_id": "smarthealthcareapp-38f31",
+    "storage_bucket": "smarthealthcareapp-38f31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175420615316:android:990b2bc4dd673084f46281",
+        "android_client_info": {
+          "package_name": "com.saveetha.smarthealthcareapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYvyQ2iof0c4oo2Rv7M8cSAUVwMjZSzyM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

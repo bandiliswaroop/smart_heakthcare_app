@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F9FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:elevation="4dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="67dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_top_header"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="FEVER HEALTH TIPS"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Text and Image Side by Side -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <!-- Left: Text -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="22dp"
+                android:layout_height="wrap_content"
+                android:text="Feeling feverish?\nHere’s how to recover faster."
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <!-- Right: Image -->
+            <ImageView
+                android:layout_width="149dp"
+                android:layout_height="107dp"
+                android:layout_marginStart="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_fever_image" />
+        </LinearLayout>
+
+
+        <!-- Tip 1 -->
+        <LinearLayout
+            android:id="@+id/tip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="😴"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rest Well"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your body needs energy to fight infection. Sleep more and avoid activity."
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#AAAAAA" android:layout_marginBottom="16dp" />
+
+        <!-- Tip 2 -->
+        <LinearLayout
+            android:id="@+id/tip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💧"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginEnd="12dp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay Hydrated"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Drink water, Coconut water, Herbal teas, healthy fruit juices etc." android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#AAAAAA" android:layout_marginBottom="16dp" />
+
+        <!-- Tip 3 -->
+        <LinearLayout android:id="@+id/tip3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🍲" android:layout_gravity="center" android:textSize="30sp" android:layout_marginEnd="12dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Eat Light" android:textStyle="bold" android:textSize="18sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consume fruits, soups and easily digestible food." android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#AAAAAA" android:layout_marginBottom="16dp" />
+
+        <!-- Tip 4 -->
+        <LinearLayout android:id="@+id/tip4"  android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❄️" android:layout_gravity="center" android:textSize="30sp" android:layout_marginEnd="12dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cool Compress" android:textStyle="bold" android:textSize="18sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Apply a cool damp cloth to your forehead and neck." android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#AAAAAA" android:layout_marginBottom="16dp" />
+
+        <!-- Tip 5 -->
+        <LinearLayout android:id="@+id/tip5" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💊" android:layout_gravity="center" android:textSize="30sp" android:layout_marginEnd="12dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medications" android:textStyle="bold" android:textSize="18sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Take paracetamol tablets if necessary (only as prescribed)." android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#AAAAAA" android:layout_marginBottom="16dp" />
+
+        <!-- Tip 6 -->
+        <LinearLayout android:id="@+id/tip6" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="16dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏥" android:layout_gravity="center" android:textSize="30sp" android:layout_marginEnd="12dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Doctor Visit" android:textStyle="bold" android:textSize="18sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consult a doctor if the fever lasts over 3 days or goes above 103°F." android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

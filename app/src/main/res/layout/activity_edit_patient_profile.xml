@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F9FF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Back Arrow and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Name -->
+        <TextView
+            android:text="Enter Your Name"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Nikesh"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <TextView
+            android:text="Enter Your Email"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="nikesh@gmail.com"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:focusable="false"
+            android:inputType="textEmailAddress" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:text="Date of Birth"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editDob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="2004-10-18"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="date" />
+
+        <!-- Gender -->
+        <TextView
+            android:text="Gender"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editGender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Male"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Mobile -->
+        <TextView
+            android:text="Your Mobile Number"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editMobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="9848259204"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:enabled="false"
+            android:focusable="false"/>
+
+        <!-- State -->
+        <TextView
+            android:text="Enter Your State Name"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editState"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Telangana"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Address -->
+        <TextView
+            android:text="Enter Your Address"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Khammam, Killa"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="UPDATE"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

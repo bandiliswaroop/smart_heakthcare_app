@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <!-- "Home" Title -->
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Appointments"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Profile + Notification Icons -->
+        <LinearLayout
+            android:id="@+id/rightIconsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Profile Icon with circle bg -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_profile"
+                android:background="@drawable/circle_background"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Profile" />
+
+            <!-- Notification Icon with red dot -->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgNotification"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:background="@drawable/circle_background"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:src="@drawable/ic_notification"-->
+<!--                android:contentDescription="Notifications" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btnAppointmentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Appointment History"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

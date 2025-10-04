@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:background="@drawable/bg_facility_container"
+    android:layout_marginBottom="8dp">
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_hospital" />
+
+    <!-- Label -->
+    <EditText
+        android:id="@+id/etFacilityName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Facility Name (e.g. ICU)"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp" />
+
+    <!-- Count -->
+    <EditText
+        android:id="@+id/etFacilityCount"
+
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:gravity="end"
+        android:textSize="16sp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:layout_marginStart="8dp" />
+
+    <!-- Remove button -->
+    <ImageView
+        android:id="@+id/btnRemoveFacility"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/ic_delete_red"
+        android:contentDescription="Remove" />
+</LinearLayout>

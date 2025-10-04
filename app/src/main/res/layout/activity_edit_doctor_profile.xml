@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F9FF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Name -->
+        <TextView
+            android:text="Full Name"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Email -->
+        <TextView
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:focusable="false"/>
+
+        <!-- Date of Birth -->
+        <TextView
+            android:text="Date of Birth"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edDob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Gender -->
+        <TextView
+            android:text="Gender"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edGender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Mobile -->
+        <TextView
+            android:text="Mobile Number"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:focusable="false"/>
+
+        <!-- Hospital -->
+        <TextView
+            android:text="Hospital Name"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edHospital"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Specialization -->
+        <TextView
+            android:text="Specialization"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edSpectalization"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Address -->
+        <TextView
+            android:text="Address"
+            android:textStyle="bold"
+            android:textColor="#3B4A5A"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:padding="16dp"
+            android:textSize="16sp" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/btnUpdatedoctor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:text="UPDATE"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+</ScrollView>

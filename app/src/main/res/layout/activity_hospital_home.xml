@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Hospital Management"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#007BFF"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#FF3B30"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Hospital Image -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#DDDDDD">
+
+            <ImageView
+                android:id="@+id/imgHospital"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/btnUploadHospitalImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_gallery"
+                android:background="@drawable/rounded_white"
+                android:padding="8dp" />
+        </FrameLayout>
+
+        <!-- Hospital Name -->
+        <EditText
+            android:id="@+id/etHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Hospital Name"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp" />
+
+        <!-- About Hospital -->
+        <EditText
+            android:id="@+id/etAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="About Hospital"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:minLines="3"
+            android:gravity="top" />
+
+        <!-- Specialties Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Specialties"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSpecialties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:id="@+id/btnAddSpecialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Specialty"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Hospital Facilities -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Facilities"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:id="@+id/facilityContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnAddFacility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Facility"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF" />
+
+
+
+
+        <!-- Advanced Technologies -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Advanced Medical Technology"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTechnologies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            android:id="@+id/btnAddTechnology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Technology"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="start"
+            android:backgroundTint="#007BFF"
+            android:textColor="#FFFFFF" />
+
+        <!-- Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Information"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact Number"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/cbEmergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/7 Emergency Services"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

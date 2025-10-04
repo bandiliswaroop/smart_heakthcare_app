@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/permissionCard"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@drawable/rounded_white_box">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notification_bell" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow SevaHealth to send you notifications ?"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnAllow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#8BCBFF"
+            android:layout_marginTop="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <Button
+            android:id="@+id/btnDeny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don’t Allow"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#8BCBFF" />
+    </LinearLayout>
+
+</RelativeLayout>

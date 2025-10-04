@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient: John Doe"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#212121" />
+
+        <TextView
+            android:id="@+id/tvPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Purpose: Regular Checkup"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvSlotTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: 10:00 AM - 10:30 AM"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#616161" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 2025-08-04"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#616161" />
+
+        <TextView
+            android:id="@+id/tvContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact: 9876543210"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#616161" />
+        <!-- STATUS TEXTVIEW -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Pending"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold"
+            android:textColor="#FFA000" /> 
+        <!-- Appointment Action Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvAppointmentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointment"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginEnd="12dp" />
+
+            <!-- Green Tick Icon -->
+            <ImageView
+                android:id="@+id/ivApprove"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_check_white"
+            android:backgroundTint="#4CAF50"
+            android:background="@drawable/circle_background"
+            android:padding="6dp" />
+
+            <!-- Red Cross Icon -->
+            <ImageView
+                android:id="@+id/ivReject"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_close_white"
+            android:backgroundTint="#F44336"
+            android:background="@drawable/circle_background"
+            android:padding="6dp"
+            android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

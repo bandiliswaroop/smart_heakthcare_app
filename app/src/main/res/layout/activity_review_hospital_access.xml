@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:text="Review Hospital Access"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="584dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_pending"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:text="Pending Review"
+            android:textColor="#3D5AFE" />
+
+        <!-- Hospital Info Section -->
+        <TextView
+            android:text="Hospital Information"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Name"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Central City Hospital"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Number"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textRegistrationNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="HSP2024024001"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Address"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="123 Medical Center Drive, Central City, CC 12345"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Contact Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Number"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="+1 (555) 123-4567"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Admin Details -->
+        <TextView
+            android:text="Administrator Details"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Admin Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Name"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textAdminName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Dr. Sarah Johnson"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Admin Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Email"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textAdminEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="s.johnson@centralcity.hospital"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Admin Position -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Position"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/textAdminPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Chief Medical Officer"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Department -->
+        <TextView
+            android:text="Department"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Department Name"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textDepartment"
+            android:text="Administration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Expected Number of Users -->
+        <TextView
+            android:text="Expected Number of Users"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Number of Users"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textExpectedUsers"
+            android:text="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Brief Description -->
+        <TextView
+            android:text="Brief Description"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Description"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textBriefDescription"
+            android:text="Requesting access for hospital staff to manage patient records and administrative tasks."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submitted Documents -->
+        <TextView
+            android:text="Submitted Documents"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Document Item Template -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:src="@drawable/ic_document"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnViewsLicense"
+                android:text="View"
+                android:textColor="#3D5AFE"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Repeat Document Item for each document -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:src="@drawable/ic_document"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnViewsRegistrationCertificate"
+                android:text="View"
+                android:textColor="#3D5AFE"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edittext">
+
+            <ImageView
+                android:src="@drawable/ic_document"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:text=""
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnViewsAdditionalDocuments"
+                android:text="View"
+                android:textColor="#3D5AFE"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!-- Terms -->
+        <TextView
+            android:text="• Applicant has agreed to the Terms &amp; Conditions and confirmed that all provided information is accurate"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnReject"
+                android:text="Reject"
+                android:background="@drawable/bg_button_reject"
+                android:textColor="#FF0000"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnApprove"
+                android:text="Approve"
+                android:backgroundTint="#007BFF"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Processing Time -->
+        <TextView
+            android:text="Processing time: 2-3 business days"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

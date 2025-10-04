@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back button and title -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Request Hospital Access"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Complete the form below to request administrative access"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:gravity="center"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!-- Hospital Information -->
+        <TextView
+            android:id="@+id/tvHospitalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospital Information"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etHospitalName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter hospital name"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/tvHospitalInfo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etRegistrationNumber"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter registration number"
+            android:inputType="text"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etHospitalName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etHospitalAddress"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter complete address"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etRegistrationNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etContactNumber"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etHospitalAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Administrator Details -->
+        <TextView
+            android:id="@+id/tvAdminDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Administrator Details"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etContactNumber"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etAdminName"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter admin name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/tvAdminDetails"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etAdminEmail"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter admin email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etAdminName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etAdminPosition"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter position"
+            android:inputType="text"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etAdminEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etDepartment"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter department"
+            android:inputType="text"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etAdminPosition"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etNumberOfUsers"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter number of users"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etDepartment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/etBriefDescription"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="Enter brief description"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:background="@drawable/rounded_edittext"
+            app:layout_constraintTop_toBottomOf="@id/etNumberOfUsers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Required Documents -->
+        <TextView
+            android:id="@+id/tvRequiredDocuments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Required Documents"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etBriefDescription"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Upload Buttons with Dashed Blue Outline -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadLicense"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Hospital License"
+            app:icon="@drawable/upload_icon"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@color/blue"
+            app:iconSize="24dp"
+            android:textColor="@color/blue"
+            android:background="@drawable/upload_button_background"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/tvRequiredDocuments"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadCertificate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Registration Certificate"
+            app:icon="@drawable/upload_icon"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@color/blue"
+            app:iconSize="24dp"
+            android:textColor="@color/blue"
+            android:background="@drawable/upload_button_background"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadLicense"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadAdditionalDocs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Additional Documents"
+            app:icon="@drawable/upload_icon"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@color/blue"
+            app:iconSize="24dp"
+            android:textColor="@color/blue"
+            android:background="@drawable/upload_button_background"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadCertificate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Terms and Submit -->
+
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="I agree to the Terms &amp; Conditions and confirm that all provided information is accurate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnUploadAdditionalDocs" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/cbTerms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvProcessingTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="⏳ Processing time: 2–3 business days"
+            android:textSize="12sp"
+            android:textColor="#888888"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/btnSubmit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvReviewerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textStyle="bold"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="true"/>
+
+    <TextView
+        android:id="@+id/tvReviewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a great doctor!"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tvReviewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Sep 2025"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="2dp"/>
+</LinearLayout>

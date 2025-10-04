@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="EMERGENCY"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="#FF2B2B"
+            android:textColor="#FFFFFF"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="0dp"/>
+    </LinearLayout>
+
+    <!-- Ambulance Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_box"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_ambulance"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambulance"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="108"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callAmbulance"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_call_black"
+            android:contentDescription="Call" />
+    </LinearLayout>
+
+    <!-- Police Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@drawable/border_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/ic_police" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Police"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#000000"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callPolice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Call"
+            android:src="@drawable/ic_call_black" />
+    </LinearLayout>
+
+    <!-- (MHSS) Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_box"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_104"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="(MHSS)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:text="104"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/call104"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_call_black"
+            android:contentDescription="Call" />
+    </LinearLayout>
+    <!-- 1056 DISHA Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border_box"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_disha"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="DISHA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+
+            <TextView
+                android:text="1056"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/callDisha"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_call_black"
+            android:contentDescription="Call" />
+    </LinearLayout>
+</LinearLayout>

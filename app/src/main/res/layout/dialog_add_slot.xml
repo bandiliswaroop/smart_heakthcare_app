@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurface"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Time Slot"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_marginBottom="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edtSlotTime"
+        android:hint="Time (e.g. 10:00 AM - 11:00 AM)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorHint"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/edtRemaining"
+        android:hint="Remaining Slots"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:textColor="?android:textColorPrimary"
+        android:textColorHint="?android:textColorHint"
+        android:layout_marginTop="12dp"
+        android:imeOptions="actionDone"
+        />
+
+</LinearLayout>
